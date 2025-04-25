@@ -1,0 +1,25 @@
+{
+    "bots": [
+      {
+        "id": 1,
+        "name": "Robot 1",
+        "avatar_url": "https://robohash.org/robot1.png",
+        "bot_class": "Support",
+        "health": 100,
+        "damage": 30,
+        "armor": 50,
+        "catchphrase": "I am here to support!"
+      },
+      {
+        "id": 2,
+        "name": "Robot 2",
+        "avatar_url": "https://robohash.org/robot2.png",
+        "bot_class": "Medic",
+        "health": 120,
+        "damage": 20,
+        "armor": 60,
+        "catchphrase": "I'll heal you!"
+      }
+    ]
+  }
+  
