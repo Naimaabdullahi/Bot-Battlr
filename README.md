@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+Bot Battlr
+Welcome to Bot Battlr! A galactic web app where you can browse, enlist, release, and discharge robots into your own army. The goal is to manage your bot army with ease and strategy, all while learning React and working with APIs.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+About
 
-## Available Scripts
+Technologies Used
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Project Structure
 
-### `npm test`
+Contributing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+License
 
-### `npm run build`
+About
+Bot Battlr is an interactive web app that allows you to browse a collection of robots, enlist them into your army, release them, and even discharge them forever. You will interact with the bot profiles through various features like sorting, filtering, and detailed views.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Technologies Used
+React: For building the front-end UI and managing state.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+json-server: For setting up a mock backend API to store and manage bot data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CSS: For styling the application.
 
-### `npm run eject`
+JavaScript: For app logic and API interactions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Features
+Core Features:
+Bot Collection: View profiles of all available bots.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Enlist Bots: Add a bot to your army by clicking on the bot's profile.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Release Bots: Remove a bot from your army.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Discharge Bots: Permanently remove a bot from both the frontend and backend.
 
-## Learn More
+Advanced Features:
+Bot Details: View detailed information about each bot.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sorting: Sort bots by health, damage, or armor.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Filtering: Filter bots by their class (e.g., Medic, Assault, etc.).
 
-### Code Splitting
+One Bot per Class: Enlist only one bot per class into your army.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Setup
+Follow these steps to set up the project locally:
 
-### Analyzing the Bundle Size
+1. Clone the repository
+bash
+Copy code
+git clone https://github.com/naimaabdullahi/bot-battlr.git
+cd bot-battlr
+2. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+bash
+Copy code
+npm install
+3. Setup the backend with json-server
 
-### Making a Progressive Web App
+Paste the bot data into db.json (as shown in the project instructions).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start the json-server:
 
-### Advanced Configuration
+bash
+Copy code
+json-server --watch db.json --port 8001
+4. Run the React application
+Now, you can run the React app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+bash
+Copy code
+npm start
+This will start the app and open it in your browser at http://localhost:3000.
 
-### Deployment
+Usage
+Visit http://localhost:3000 in your browser to view the bot collection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Click on any bot to view their details, enlist them into your army, or release them.
 
-### `npm run build` fails to minify
+Bots that are enlisted appear in your YourBotArmy section. You can discharge bots by clicking the red "x" button next to their profile.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sort the bots by health, damage, or armor, and filter by their class.
+
+Project Structure
+bash
+Copy code
+/bot-battlr
+├── /public
+├── /src
+│   ├── /components
+│   │   ├── BotCollection.js
+│   │   ├── YourBotArmy.js
+│   │   ├── BotSpecs.js
+│   │   ├── SortBar.js
+│   ├── /App.js
+│   ├── /index.js
+├── db.json
+├── package.json
+└── README.md
+Contributing
+Fork the repository.
+
+Create a new branch (git checkout -b feature-name).
+
+Commit your changes (git commit -am 'Add new feature').
+
+Push to the branch (git push origin feature-name).
+
+Open a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
